@@ -1,0 +1,22 @@
+<view class="comment-detail-box">
+    <view class="comment-main-box">
+        <view class="comment-title">精彩评论（共{{comments.length}}条）</view>
+        <block wx:for="{{comments}}">
+            <view class="comment-item">
+                <image class="avatar" src="{{item.avatar}}"></image>
+                <view class="comment-body">
+                    <view class="user-name">
+                        <text class="">{{item.name}}</text>
+                    </view>
+                    <text class="comment-txt">{{item.content}}</text>
+                </view>
+            </view>
+        </block>
+    </view>
+    <view class="input-box">
+        <view class="input-main-box">
+            <input value="{{inputValue}}" bindinput="bindCommentInput" type="emoji" placeholder="说点什么吧……"/>
+        </view>
+        <view class="submit-btn" bindtap="submitCommentInfo">发送</view>
+    </view>
+</view>

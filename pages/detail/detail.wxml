@@ -1,0 +1,19 @@
+<view class="section">
+    <view class="title">{{news.title}}</view>
+    <view class="author-box">
+        <text class="author">{{news.author}}</text>
+        <text class="time">{{news.time}}</text>
+    </view>
+    <text class="details">{{news.details}}</text>
+    <view class="up-comment-box">
+        <view class="up-comment-box-btn" bindtap="likeNews">
+            <image wx:if="{{news.isLike}}" src="/imgs/icon_liked.png"></image>
+            <image wx:else src="/imgs/icon_like.png"></image>
+            <text>{{news.likeCounts}}</text>
+        </view>
+        <view class="up-comment-box-btn" bindtap="showComments">
+            <image src="/imgs/icon_comment.png"></image>
+            <text>{{news.comments.length}}</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,46 @@
+.section{
+  padding: 20rpx;
+}
+.title{
+  font-size: 38rpx;
+  color: #333;
+  margin: 20rpx 10rpx;
+  font-weight: 600;
+  line-height: 60rpx;
+}
+.author-box{
+  font-size: 24rpx;
+  color: #666666;
+  margin: 20rpx 0;
+}
+.author-box text{
+  margin-right: 20rpx;
+}
+.details{
+  margin: 20rpx 0;
+  font-size: 30rpx;
+  color: #777;
+  line-height: 44rpx;
+  letter-spacing: 2px;
+}
+.up-comment-box{
+  margin: 30rpx 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.up-comment-box-btn{
+  margin-right:30rpx;
+  font-size: 26rpx;
+  color: #777;
+  display: flex;
+  align-items: center;
+}
+.up-comment-box-btn:last-child{
+  margin-right:0;
+}
+.up-comment-box-btn image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
